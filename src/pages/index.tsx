@@ -23,7 +23,7 @@ function Page() {
         <>
             <h1>One API route to rule them all</h1>
             <p>
-                The following routes are all handles by the same API Route in
+                The following routes are all handled by the same API Route in
                 <i> /pages/api/router/...</i>.
             </p>
             <ul>
