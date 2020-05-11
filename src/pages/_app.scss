@@ -1,0 +1,20 @@
+a {
+    cursor: pointer;
+    text-decoration: underline;
+
+    figure {
+        display: inline-block;
+    }
+    img {
+        opacity: 0.5;
+    }
+    &:hover img {
+        opacity: 1;
+    }
+}
+
+textarea {
+    height: 300px;
+    max-width: 100%;
+    min-width: 400px;
+}

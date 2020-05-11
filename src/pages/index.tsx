@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 
-const linkStyle: React.CSSProperties = {
-    cursor: 'pointer',
-    textDecoration: 'underline',
-};
-
 function Page() {
     const [payload, setPayload] = useState('');
 
@@ -74,18 +69,13 @@ function Page() {
                 </li>
                 <li>
                     Fetch:{' '}
-                    <a
-                        style={linkStyle}
-                        onClick={handleApiCall}
-                        data-endpoint="/api/router"
-                    >
+                    <a onClick={handleApiCall} data-endpoint="/api/router">
                         /api/router
                     </a>
                 </li>
                 <li>
                     Fetch:{' '}
                     <a
-                        style={linkStyle}
                         onClick={handleApiCall}
                         data-endpoint="/api/router/test1"
                     >
@@ -95,7 +85,6 @@ function Page() {
                 <li>
                     Fetch:{' '}
                     <a
-                        style={linkStyle}
                         onClick={handleApiCall}
                         data-endpoint="/api/router/test1/test2"
                     >
@@ -103,14 +92,33 @@ function Page() {
                     </a>
                 </li>
                 <li>
-                    <textarea
-                        style={{ maxWidth: '100%' }}
-                        rows={10}
-                        value={payload}
-                        readOnly={true}
-                    />
+                    <textarea value={payload} readOnly={true} />
                 </li>
             </ul>
+
+            <a
+                href="https://github.com/willemliu/one-api-route-to-rule-them-all"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+            >
+                <figure>
+                    <picture>
+                        <source
+                            media="(max-width: 640px)"
+                            srcSet={`/assets/github/GitHub-Mark-32px.png, /assets/github/GitHub-Mark-64px.png 2x`}
+                        />
+                        <source
+                            media="(min-width:641px)"
+                            srcSet={`/assets/github/GitHub-Mark-32px.png, /assets/github/GitHub-Mark-64px.png 2x, /assets/github/GitHub-Mark-120px.png 3x`}
+                        />
+                        <img
+                            alt="GitHub"
+                            src={`/assets/github/GitHub-Mark-32px.png`}
+                        />
+                    </picture>
+                </figure>
+            </a>
         </>
     );
 }
