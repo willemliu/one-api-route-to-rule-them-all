@@ -11,3 +11,17 @@ become paramount to use as few API Routes as possible even though it's well supp
 
 I picked the first router I found [here](https://github.com/amio/awesome-micro#routing). I've looked at the others in the list. Besides the file-based one I think they should all work.
 This [Router](https://github.com/pillarjs/router) looks to have the most community support compared to the rest of the list.
+
+## Local development
+
+### Prerequisites
+
+1. NodeJS + NPM
+
+### Install dependencies
+
+Run `npm i`.
+
+### Start local server
+
+Run `npm run dev`.
