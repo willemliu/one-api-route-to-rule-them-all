@@ -1,5 +1,7 @@
 # one-api-route-to-rule-them-all
 
+[Demo](https://one-api-route-to-rule-them-all.now.sh)
+
 Minimal show-case of how to have a single API Route handle all incoming requests.
 
 In light of the [limits](https://github.com/zeit/now/discussions/4029) set bij Vercel (formerly known as Zeit Now) it has now
