@@ -1,6 +1,6 @@
 import Router from 'router';
-import { rootRoute } from '../../../api/rootRoute';
 import finalhandler from 'finalhandler';
+import { rootRoute } from '../../../api/rootRoute';
 import { test1Route } from '../../../api/test1Route';
 import { test2Route } from '../../../api/test2Route';
 
