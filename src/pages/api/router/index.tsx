@@ -1,5 +1,3 @@
-import Cors from 'micro-cors';
-const cors = Cors({ allowMethods: ['GET', 'HEAD'] });
 import Router from 'router';
 import { rootRoute } from '../../../api/rootRoute';
 import finalhandler from 'finalhandler';
@@ -16,4 +14,4 @@ function getRoutes(req, res) {
     router(req, res, finalhandler(req, res));
 }
 
-export default cors(getRoutes);
+export default getRoutes;
