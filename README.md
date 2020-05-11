@@ -25,4 +25,3 @@ Run `npm i`.
 ### Start local server
 
 Run `npm run dev`.
-.
