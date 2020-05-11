@@ -27,7 +27,10 @@ function Page() {
     return (
         <>
             <h1>One API route to rule them all</h1>
-            <p>The following routes are all handles by the same API Route.</p>
+            <p>
+                The following routes are all handles by the same API Route in
+                <i> /pages/api/router/...</i>.
+            </p>
             <ul>
                 <li>
                     Clicking on any of the links below will open the route in a
